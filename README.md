@@ -1,7 +1,7 @@
 # SlicerPythonCLIExample
 Example extension for 3D Slicer that demonstrates how to make a Python script available as a CLI module
 
-BlurImage module is a simple Python script, which is made available in Slicer as a CLI module (with auto-generated GUI) just by adding a description of input and output parameters in a [Slicer Execution Model XML file](https://www.slicer.org/wiki/Documentation/Nightly/Developers/SlicerExecutionModel).
+Let's assume you have a [BlurImage.py](BlurImage/BlurImage.py) Python script that you can run from the command line as `python BlurImage.py input.nrrd 5.0 output.nrrd`. You can make this Python script available in Slicer using a nice auto-generated GUI just by adding a description of input and output parameters in a [Slicer Execution Model](https://www.slicer.org/wiki/Documentation/Nightly/Developers/SlicerExecutionModel) module descriptor XML file: [BlurImage.xml](BlurImage/BlurImage.xml).
 
 Once `BlurImage` folder is added to additional module paths (or the extension package is installed), "Blur Image" module will show up in the module list (in Filtering / Denoising category) and can be used in Slicer as any other module.
 
